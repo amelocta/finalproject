@@ -128,7 +128,7 @@ class Transformer():
         data = data[['id', 'district_id', 'case_id', 'date', 'total']]
 
         try:
-            p = "DROP TABLE IF EXISTS distict_daily"
+            p = "DROP TABLE IF EXISTS district_daily"
             self.engine_postgres.execute(p)
         except SQLAlchemyError as e:
             print(e)
