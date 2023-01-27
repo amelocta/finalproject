@@ -134,4 +134,4 @@ class Transformer():
             print(e)
 
         #insert to postgres
-        data.to_sql(con=self.engine_postgres, name='distict_daily', index=False)
+        data.to_sql(con=self.engine_postgres, name='district_daily', index=False)
