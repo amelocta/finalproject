@@ -1,0 +1,15 @@
+version: "3"
+services:
+  metabase-app:
+    image: metabase/metabase
+    restart: always
+    ports:
+    - 3001:3000
+    volumes:
+    - metabase_data:/metabase
+
+volumes:
+  metabase_data: # docker volume create metabase_data
+    external: true
+
+      
